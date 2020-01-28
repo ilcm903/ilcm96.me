@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Sans+KR:400,700&display=swap&subset=korean');
+@import url('./code.css');
+
+body {
+  --pink: #4a9ae1;
+  background-color: var(--bg);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body.light {
+  --bg: #fff;
+  --header: var(--pink);
+  --textNormal: #393939;
+  --textTitle: #393939;
+  --textLink: #4a9ae1;
+  --hr: hsla(0, 0%, 0%, 0.2);
+  --inlineCode-bg: #fafaf8;
+  --inlineCode-text: #1a1a1a;
+  --inlineCode-line-highlight: #eeeeed;
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: #242424;
+  --header: #fff;
+  --textNormal: rgba(255, 255, 255, 0.88);
+  --textTitle: #fff;
+  --textLink: var(--pink);
+  --hr: hsla(0, 0%, 100%, 0.2);
+  --inlineCode-bg: #282c34;
+  --inlineCode-text: #e6e6e6;
+  --inlineCode-line-highlight: #2d3544;
+}
+
+th {
+  border-bottom: var(--color);
+}
+
+th.light {
+  --color: 1px solid hsla(0, 0%, 0%, 0.12);
+}
+
+th.dark {
+  --color: 1px solid aqua;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(-20deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  30%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.hand {
+  display: inline-block;
+  animation: shake 2s 1.5;
+  transform-origin: right bottom;
+  animation-play-state: running;
+}
