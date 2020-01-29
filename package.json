@@ -47,6 +47,7 @@
     "format": "prettier --write '{gatsby-*.js,src/**/*.{js,jsx,json,css}}'",
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "rm -rf public && rm -rf .cache && gatsby build"
+    "build": "rm -rf public && rm -rf .cache && gatsby build",
+    "clear": "rm -rf public && rm -rf .cache"
   }
 }
