@@ -71,3 +71,6 @@ yarn-error.log
 
 # Webstorm
 .idea
+
+# Local Test Post Dir
+src/posts/test-post/*
