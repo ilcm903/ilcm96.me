@@ -73,4 +73,4 @@ yarn-error.log
 .idea
 
 # Local Test Post Dir
-src/posts/test-post/*
+src/posts/*test-post/*
