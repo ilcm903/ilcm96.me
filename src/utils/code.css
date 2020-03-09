@@ -2,7 +2,8 @@ code[class*='language-'],
 pre[class*='language-'] {
   color: var(--inlineCode-text);
   background: none;
-  font-family: 'Roboto Mono', Consolas, Menlo, Monaco, source-code-pro, 'Courier New', 'Noto Sans KR';
+  font-family: 'Roboto Mono', Consolas, Menlo, Monaco, source-code-pro,
+    'Courier New', 'Noto Sans KR';
 
   text-align: left;
   white-space: pre;

@@ -1,6 +1,5 @@
 import { Link, graphql } from 'gatsby';
 
-import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import React from 'react';
 import SEO from '../components/SEO';

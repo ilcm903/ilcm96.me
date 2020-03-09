@@ -93,7 +93,7 @@ class Layout extends React.Component {
             marginRight: 'auto',
             maxWidth: rhythm(24),
             padding: `2.625rem ${rhythm(3 / 4)}`,
-            maxWidth: '45rem'
+            maxWidth: '45rem',
           }}
         >
           <header
