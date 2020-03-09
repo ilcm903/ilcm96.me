@@ -5,6 +5,7 @@ import get from 'lodash/get';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
+import Comment from '../components/Comment';
 import { rhythm, scale } from '../utils/typography';
 
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -48,7 +49,7 @@ class BlogPostTemplate extends React.Component {
         <aside>
           <div
             style={{
-              margin: '90px 0 40px 0',
+              margin: '60px 0 40px 0',
               fontFamily: systemFont,
             }}
           />
@@ -69,6 +70,7 @@ class BlogPostTemplate extends React.Component {
             </a>
           </h3>
           <Bio />
+          <Comment />
           <nav>
             <ul
               style={{
@@ -77,7 +79,7 @@ class BlogPostTemplate extends React.Component {
                 justifyContent: 'space-between',
                 listStyle: 'none',
                 padding: 0,
-                margin: 0,
+                marginTop: rhythm(0.5),
               }}
             >
               <li>

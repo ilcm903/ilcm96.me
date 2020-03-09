@@ -31,6 +31,7 @@
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
+    "react-utterances": "^0.6.4",
     "typography": "^0.16.19",
     "typography-theme-github": "^0.16.19"
   },
