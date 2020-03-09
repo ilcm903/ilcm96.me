@@ -14,7 +14,7 @@ sudo apt install docker-ce
 ```
 
 만약 18.04가 아닌 다른 버전을 사용중 이라면 3번째 명령어의 bionic 부분을 해당 버전의 코드 네임의 앞부분으로 바꿔주면 된다.  
-만약 코드 네임을 모른다면 [Ubuntu Wiki](https://wiki.ubuntu.com/Releases) 참고하면 된다.  
+만약 코드 네임을 모른다면 [Ubuntu Wiki](https://wiki.ubuntu.com/Releases)를 참고하면 된다.  
 
 # 2. 사용자를 Docker 그룹에 추가
 
