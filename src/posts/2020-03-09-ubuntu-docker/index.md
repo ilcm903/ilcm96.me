@@ -1,6 +1,6 @@
 ---
 title: Ubuntu Docker 설치
-date: '2020-03-05'
+date: '2020-03-09'
 description: 이제는 표준이 된 Docker를 설치해 봅니다
 ---
 
