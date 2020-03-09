@@ -62,7 +62,7 @@ class BlogPostTemplate extends React.Component {
               style={{
                 boxShadow: 'none',
                 textDecoration: 'none',
-                color: 'var(--pink)',
+                color: 'var(--skyblue)',
               }}
               href={'https://github.com/ilcm96'}
             >
