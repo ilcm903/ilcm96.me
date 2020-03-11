@@ -6,15 +6,11 @@ description: 이제는 표준이 된 Docker를 설치해 봅니다
 
 # 1. Docker 설치
 
-```bash
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
-sudo apt install docker-ce
-```
+> 아래 스크립트는 굳이 Ubuntu가 아니더라도 CentOS나 Debian에서도 동일하게 사용할 수 있다
 
-만약 18.04가 아닌 다른 버전을 사용중 이라면 3번째 명령어의 bionic 부분을 해당 버전의 코드 네임의 앞부분으로 바꿔주면 된다.  
-만약 코드 네임을 모른다면 [Ubuntu Wiki](https://wiki.ubuntu.com/Releases)를 참고하면 된다.  
+```bash
+curl -fsSL https://get.docker.com | sh
+```
 
 # 2. 사용자를 Docker 그룹에 추가
 
