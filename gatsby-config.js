@@ -94,7 +94,7 @@ module.exports = {
                   .replace(/,\s*\/static\//g, `,${siteUrl}/static/`);
                 const url = siteUrl + '/' + slug;
                 const postText = `
-                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at eunjeong.me. You can read it online by <a href="${url}">clicking here</a>.)</div>
+                <div style="margin-top=55px; font-style: italic;">(Article posted on ilcm96.me. You can read it online by <a href="${url}">clicking here</a>.)</div>
                 `;
 
                 return {
