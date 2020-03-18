@@ -18,6 +18,7 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, 'data.site.siteMetadata.title');
+    const thumbnail = post.frontmatter.thumbnail.childImageSharp.fluid.src
     let { previous, next } = this.props.pageContext;
     let html = post.html;
 
@@ -27,6 +28,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description}
           slug={post.fields.slug}
+          thumbnail={thumbnail}
         />
         <main>
           <article>

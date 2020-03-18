@@ -6,6 +6,8 @@ import SEO from '../components/SEO';
 import get from 'lodash/get';
 import { rhythm } from '../utils/typography';
 
+import defaultThumbnail from '../assets/thumbnail.png';
+
 class BlogIndexTemplate extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title');
@@ -13,7 +15,9 @@ class BlogIndexTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO />
+        <SEO 
+          thumbnail={defaultThumbnail}
+        />
         <main>
           {posts.map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug;

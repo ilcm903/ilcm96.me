@@ -16,15 +16,15 @@ const query = graphql`
   }
 `;
 
-function SEO({ meta, image, title, description, slug, lang = 'ko' }) {
+function SEO({ meta, thumbnail, title, description, slug, lang = 'ko' }) {
   return (
     <StaticQuery
       query={query}
       render={data => {
         const { siteMetadata } = data.site;
         const metaDescription = description || siteMetadata.description;
-        const metaImage = image ? `${siteMetadata.siteUrl}/${image}` : null;
-        const url = `${siteMetadata.siteUrl}${slug}`;
+        const metaImage = `${data.site.siteMetadata.siteUrl}${thumbnail}`
+        const url = `${siteMetadata.siteUrl}/${slug}`;
         return (
           <Helmet
             htmlAttributes={{ lang }}
@@ -69,22 +69,19 @@ function SEO({ meta, image, title, description, slug, lang = 'ko' }) {
                 name: 'google-site-verification',
                 content: '',
               },
-            ]
-              .concat(
-                metaImage
-                  ? [
-                      {
-                        property: 'og:image',
-                        content: metaImage,
-                      },
-                      {
-                        name: 'twitter:image',
-                        content: metaImage,
-                      },
-                    ]
-                  : []
-              )
-              .concat(meta)}
+              {
+                property: 'image',
+                content: metaImage,
+              },
+              {
+                property: 'og:image',
+                content: metaImage,
+              },
+              {
+                name: 'twitter:image',
+                content: metaImage,
+              },
+            ]}
           />
         );
       }}
