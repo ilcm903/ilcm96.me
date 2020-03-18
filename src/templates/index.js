@@ -15,9 +15,7 @@ class BlogIndexTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO 
-          thumbnail={defaultThumbnail}
-        />
+        <SEO thumbnail={defaultThumbnail} />
         <main>
           {posts.map(({ node }) => {
             const title = get(node, 'frontmatter.title') || node.fields.slug;

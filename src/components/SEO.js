@@ -23,7 +23,7 @@ function SEO({ meta, thumbnail, title, description, slug, lang = 'ko' }) {
       render={data => {
         const { siteMetadata } = data.site;
         const metaDescription = description || siteMetadata.description;
-        const metaImage = `${data.site.siteMetadata.siteUrl}${thumbnail}`
+        const metaImage = `${data.site.siteMetadata.siteUrl}${thumbnail}`;
         const url = `${siteMetadata.siteUrl}/${slug}`;
         return (
           <Helmet
