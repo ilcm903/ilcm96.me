@@ -8,6 +8,8 @@ import SEO from '../components/SEO';
 import Comment from '../components/Comment';
 import { rhythm, scale } from '../utils/typography';
 
+import Img from 'gatsby-image';
+
 const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif`;
@@ -41,6 +43,13 @@ class BlogPostTemplate extends React.Component {
                 }}
               >
                 {post.frontmatter.date}
+              </p>
+              <p
+                style={{
+                  marginBottom: rhythm(1),
+                }}
+              >
+                <Img fluid={post.frontmatter.thumbnail.childImageSharp.fluid} />
               </p>
             </header>
             <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -125,6 +134,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY-MM-DD")
         description
+        thumbnail {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
       fields {
         slug
