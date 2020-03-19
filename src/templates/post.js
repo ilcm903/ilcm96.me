@@ -46,13 +46,13 @@ class BlogPostTemplate extends React.Component {
               >
                 {post.frontmatter.date}
               </p>
-              <p
+              <Img
+                fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
                 style={{
                   marginBottom: rhythm(1),
                 }}
               >
-                <Img fluid={post.frontmatter.thumbnail.childImageSharp.fluid} />
-              </p>
+              </Img>
             </header>
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </article>
