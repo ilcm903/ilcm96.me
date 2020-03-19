@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Toggle from './Toggle';
+import Toggle from 'react-toggle';
 import Helmet from 'react-helmet';
 
 import { rhythm, scale } from '../utils/typography';
 import sun from '../assets/sun.png';
 import moon from '../assets/moon.png';
+import './Toggle.css';
 
 class Layout extends React.Component {
   state = {
