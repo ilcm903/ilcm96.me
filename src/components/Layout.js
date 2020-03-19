@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Toggle from 'react-toggle';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 import { rhythm, scale } from '../utils/typography';
 import sun from '../assets/sun.png';
