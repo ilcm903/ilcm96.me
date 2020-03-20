@@ -4,6 +4,8 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
+import NotFoundImage from '../assets/404.png';
+
 class NotFoundPage extends React.Component {
   render() {
     const { data } = this.props;
@@ -12,8 +14,12 @@ class NotFoundPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="404: Not Found" />
-        <h1>404</h1>
-        <h2>
+        <img src={NotFoundImage}></img>
+        <h2
+          style={{
+            textAlign: 'center',
+          }}
+        >
           페이지를 찾을 수 없습니다{' '}
           <span role="img" aria-label="Sad face">
             😥
