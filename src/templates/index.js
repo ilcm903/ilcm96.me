@@ -37,7 +37,24 @@ class BlogIndexTemplate extends React.Component {
                       {title}
                     </Link>
                   </h3>
-                  <small>{node.frontmatter.date}</small>
+                  <small>
+                    {node.frontmatter.date}
+                    {node.frontmatter.tags && (
+                      <>
+                        {' • '}
+                        <ul className="tags">
+                          {node.frontmatter.tags.map(tag => (
+                            <li key={tag}>
+                              {/* <Link to={`/tag/${tag}`}>
+                                {tag}
+                              </Link> */}
+                              {tag}
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                  </small>
                 </header>
                 <p
                   style={{
@@ -76,6 +93,7 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             title
             description
+            tags
           }
         }
       }

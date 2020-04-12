@@ -3,6 +3,7 @@ title: Windows VSCode를 통한 Go 개발 환경 구축
 date: '2020-04-07'
 description: 다소 까다로운 Golang의 개발 환경을 구축해봅니다
 thumbnail: './go.png'
+tags: ['Go']
 ---
 
 # Requirement

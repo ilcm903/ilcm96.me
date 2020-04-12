@@ -3,6 +3,7 @@ title: Flutter 개발 환경 구축하기
 date: '2020-02-01'
 description: Google의 Cross Platform 앱 개발 프레임워크, Flutter의 개발 환경을 구축해봅니다
 thumbnail: './flutter.png'
+tags: ['Flutter']
 ---
 
 > Windows 10에서 진행합니다

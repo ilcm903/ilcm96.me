@@ -3,6 +3,7 @@ title: Ubuntu Swap 설정
 date: '2020-03-08'
 description: 램이 부족한 인스턴스를 위해 Swap를 설정해봅니다
 thumbnail: './ubuntu.png'
+tags: ['Linux']
 ---
 
 # 1. Swap 상태 확인하기

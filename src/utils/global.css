@@ -3,6 +3,7 @@
 
 body {
   --skyblue: #4a9ae1;
+  --pink: #fc588f;
   background-color: var(--bg);
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -63,4 +64,17 @@ th.dark {
   animation: shake 2s 1.5;
   transform-origin: right bottom;
   animation-play-state: running;
+}
+
+.tags,
+.tags li {
+  display: inline;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: var(--skyblue);
+}
+
+.tags li:not(:first-child)::before {
+  content: ', ';
 }

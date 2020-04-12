@@ -3,6 +3,7 @@ title: Let's Encrypt 와일드카드 인증서 발급받기
 date: '2020-03-16'
 description: Docker를 활용해 Let's Encrypt에서 와일드카드 인증서를 받아봅니다
 thumbnail: './letsencrypt.png'
+tags: ['Web']
 ---
 
 # 와일드카드 인증서와 일반 인증서와의 차이점은?
