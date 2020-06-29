@@ -17,4 +17,7 @@ module.exports = {
       "jsx": true,
     },
   }
+  "rules": {
+    "import/no-named-as-default": 0
+}
 }
