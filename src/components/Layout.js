@@ -93,7 +93,7 @@ class Layout extends React.Component {
             marginLeft: 'auto',
             marginRight: 'auto',
             maxWidth: rhythm(24),
-            padding: `2.625rem ${rhythm(3 / 4)}`,
+            padding: `2.625rem ${rhythm(3.2 / 4)}`,
             maxWidth: '45rem',
           }}
         >
@@ -129,7 +129,7 @@ class Layout extends React.Component {
                   ),
                 }}
                 unchecked={this.state.theme === 'light'}
-                onChange={e =>
+                onChange={(e) =>
                   window.__setPreferredTheme(
                     e.target.checked ? 'dark' : 'light'
                   )
